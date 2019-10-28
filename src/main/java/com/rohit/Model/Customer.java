@@ -17,6 +17,9 @@ public class Customer {
 	private int age;
 	@Email
 	private String email;
+	
+	@CourseCode(value = {"roh","kum"} , message ="Please start with roh or kum")
+	private String courseCode;
 	public String getFirstName() {
 		return firstName;
 	}
@@ -47,6 +50,20 @@ public class Customer {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", email=" + email
+				+ ", courseCode=" + courseCode + "]";
 	}
 	
 }

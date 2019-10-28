@@ -18,5 +18,7 @@ LastName: ${customer.lastName}
 Age: ${customer.age }
 <br><br>
 Email: ${customer.email}
+<br><br>
+CourseCode: ${customer.courseCode }
 </body>
 </html>

@@ -16,8 +16,9 @@
 	<br><br>
 	Age : <form:input path="age"/><form:errors path="age"/>
 	<br><br>
-	Email : <form:input path="email"/>
+	Email : <form:input path="email"/><form:errors path="email"/>
 	<br><br>
+	CouseCode: <form:input path="courseCode"/><form:errors path="courseCode"/>
 	<input type="submit" value="Submit"> 
 	</form:form>
 
